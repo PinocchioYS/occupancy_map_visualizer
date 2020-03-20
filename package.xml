@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>occupancy_map_visualizer</name>
+  <version>1.0.0</version>
+  <description>The occupancy_map_visualizer package</description>
+
+  <maintainer email="youngsun.kwon@kaist.ac.kr">Youngsun Kwon</maintainer>
+
+  <license>TODO</license>
+
+  <!-- <url type="website">http://wiki.ros.org/occupancy_grid_visualizer</url> -->
+
+  <author email="youngsun.kwon@kaist.ac.kr">Youngsun Kwon</author>
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>visualization_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+
+</package>
