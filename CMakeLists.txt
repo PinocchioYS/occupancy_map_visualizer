@@ -19,7 +19,7 @@ find_package(superray_gridmap2d REQUIRED)
 ## catkin specific configuration ##
 ###################################
 catkin_package(
-    INCLUDE_DIRS include
+#    INCLUDE_DIRS include
 #  LIBRARIES occupancy_map_visualizer
     CATKIN_DEPENDS roscpp
 #  DEPENDS system_lib
@@ -30,7 +30,7 @@ catkin_package(
 ###########
 
 include_directories(
-    include
+#    include
     ${catkin_INCLUDE_DIRS}
     ${OCTOMAP_INCLUDE_DIRS}
     ${QUADMAP_INCLUDE_DIRS}
