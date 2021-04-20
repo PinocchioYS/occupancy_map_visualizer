@@ -43,7 +43,7 @@ add_executable(octomap_visualizer_node
 )
 target_link_libraries(octomap_visualizer_node
     ${catkin_LIBRARIES}
-    ${OCTOMAP_LIBRARIES}
+    "${OCTOMAP_LIBRARIES}"
 )
 
 add_executable(quadmap_visualizer_node
@@ -51,7 +51,7 @@ add_executable(quadmap_visualizer_node
 )
 target_link_libraries(quadmap_visualizer_node
     ${catkin_LIBRARIES}
-    ${QUADMAP_LIBRARIES}
+    "${QUADMAP_LIBRARIES}"
 )
 
 add_executable(gridmap3d_visualizer_node
@@ -59,7 +59,7 @@ add_executable(gridmap3d_visualizer_node
 )
 target_link_libraries(gridmap3d_visualizer_node
     ${catkin_LIBRARIES}
-    ${GRIDMAP3D_LIBRARIES}
+    "${GRIDMAP3D_LIBRARIES}"
 )
 
 add_executable(gridmap2d_visualizer_node
@@ -67,5 +67,5 @@ add_executable(gridmap2d_visualizer_node
 )
 target_link_libraries(gridmap2d_visualizer_node
     ${catkin_LIBRARIES}
-    ${GRIDMAP2D_LIBRARIES}
+    "${GRIDMAP2D_LIBRARIES}"
 )
