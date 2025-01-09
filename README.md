@@ -1,7 +1,7 @@
 ROS visualization tool for occupancy maps of SuperRay library
 =============================================================
 
-This ROS package provides the examples of visualizing various types of occupancy maps - octree, quadtree, grid3D, grid2D - 
+This ROS package provides the examples of visualizing various types of occupancy maps - octree, quadtree, grid3d, grid2d - 
 that [SuperRay library](https://github.com/PinocchioYS/SuperRay) supports.
 The example nodes publish various ROS messages according to the visualization data (see the below table), 
 and we can use a RViz tool to visualize these messages.
@@ -18,28 +18,30 @@ BUILD
 This package requires to install [SuperRay library](https://github.com/PinocchioYS/SuperRay).
 For example of installing the library, run:
 
-    cd ~/Downloads && git clone https://github.com/PinocchioYS/SuperRay.git
+    git clone https://github.com/PinocchioYS/SuperRay.git
     mkdir SuperRay/build && cd SuperRay/build
     cmake ..
     sudo make install
 
 You can build the visualization through the following commands:
 
-    cd ~/catkin_ws/src
+    cd ~/ros2_ws/src
     git clone https://github.com/PinocchioYS/occupancy_map_visualizer.git
-    cd ~/catkin_ws && catkin_make
-  
+    cd ~/ros2_ws && colcon build --cmake-args "-DCMAKE_BUILD_TYPE=Release" --packages-select occupancy_map_visualizer
+
 RUN EXAMPLES
 ------------
 You can run some examples as follows, for example, if you want to visualize a quadmap:
 
-    roslaunch occupancy_map_visualizer quadmap_visualization.launch
+    ros2 launch occupancy_map_visualizer quadmap_visualization.launch.py
   
 It will visualize the occupancy, occupied and free nodes of the quadmap in RViz.
 As an option, you can see a map saved in your custom directory like:
 
-    roslaunch occupancy_map_visualizer quadmap_visualization.launch filename:=YOUR_DIR/YOUR_FILE.ot2
+    ros2 launch occupancy_map_visualizer quadmap_visualization.launch.py quadmap_filename:=YOUR_DIR/YOUR_FILE
   
 If you have any problem or issue, notice it at [here](https://github.com/PinocchioYS/occupancy_map_visualizer/issues).
   
-
+ROS1 Support
+------------
+You can find the tag name "ros1" of this project. It provides the visualization examples on ROS1 distributions like Melodic or Noetic.
