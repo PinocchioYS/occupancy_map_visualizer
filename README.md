@@ -1,7 +1,7 @@
 ROS visualization tool for occupancy maps of SuperRay library
 =============================================================
 
-This ROS package provides the examples of visualizing various types of occupancy maps - octree, quadtree, grid3D, grid2D - 
+This ROS package provides the examples of visualizing various types of occupancy maps - octree, quadtree, grid3d, grid2d - 
 that [SuperRay library](https://github.com/PinocchioYS/SuperRay) supports.
 The example nodes publish various ROS messages according to the visualization data (see the below table), 
 and we can use a RViz tool to visualize these messages.
@@ -18,7 +18,7 @@ BUILD
 This package requires to install [SuperRay library](https://github.com/PinocchioYS/SuperRay).
 For example of installing the library, run:
 
-    cd ~/Downloads && git clone https://github.com/PinocchioYS/SuperRay.git
+    git clone https://github.com/PinocchioYS/SuperRay.git
     mkdir SuperRay/build && cd SuperRay/build
     cmake ..
     sudo make install
@@ -38,7 +38,7 @@ You can run some examples as follows, for example, if you want to visualize a qu
 It will visualize the occupancy, occupied and free nodes of the quadmap in RViz.
 As an option, you can see a map saved in your custom directory like:
 
-    roslaunch occupancy_map_visualizer quadmap_visualization.launch filename:=YOUR_DIR/YOUR_FILE.ot2
+    roslaunch occupancy_map_visualizer quadmap_visualization.launch quadmap_filename:=YOUR_DIR/YOUR_FILE
   
 If you have any problem or issue, notice it at [here](https://github.com/PinocchioYS/occupancy_map_visualizer/issues).
   
