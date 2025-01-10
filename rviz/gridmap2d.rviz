@@ -5,9 +5,9 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Marker1
-        - /Marker2
-        - /Map1
+        - /Occupied Cells1
+        - /Free Cells1
+        - /Occupancy Grid1
       Splitter Ratio: 0.434679329
     Tree Height: 1130
   - Class: rviz/Selection
@@ -36,16 +36,16 @@ Visualization Manager:
   Displays:
     - Class: rviz/Marker
       Enabled: false
-      Marker Topic: /superray/gridmap2d/occupied_cells
-      Name: Marker
+      Marker Topic: /superray/gridmap2d/occupied_nodes
+      Name: Occupied Cells
       Namespaces:
         {}
       Queue Size: 1
       Value: false
     - Class: rviz/Marker
       Enabled: false
-      Marker Topic: /superray/gridmap2d/free_cells
-      Name: Marker
+      Marker Topic: /superray/gridmap2d/free_nodes
+      Name: Free Cells
       Namespaces:
         {}
       Queue Size: 1
@@ -55,7 +55,7 @@ Visualization Manager:
       Color Scheme: map
       Draw Behind: false
       Enabled: true
-      Name: Map
+      Name: Occupancy Grid
       Topic: /superray/gridmap2d/occupancy_grid
       Unreliable: false
       Use Timestamp: false
