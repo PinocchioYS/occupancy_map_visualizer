@@ -44,4 +44,4 @@ If you have any problem or issue, notice it at [here](https://github.com/Pinocch
   
 ROS1 Support
 ------------
-You can find the tag name "ros1" of this project. It provides the visualization examples on ROS1 distributions like Melodic or Noetic.
+You can find the branch name "ros1" of this project. It provides the visualization examples on ROS1 distributions like Melodic or Noetic.
